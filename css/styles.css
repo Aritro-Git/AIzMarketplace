@@ -284,19 +284,46 @@ a:hover{opacity:0.92}
   width:190px;
   height:140px;
   border-radius:22px;
-  border:1px solid rgba(255,255,255,0.10);
-  background:rgba(255,255,255,0.015);
+  border:1px solid rgba(255,255,255,0.12);
+  background:
+    radial-gradient(120px 90px at 25% 30%, rgba(124,92,255,0.22), transparent 60%),
+    radial-gradient(120px 90px at 75% 70%, rgba(39,215,166,0.14), transparent 62%),
+    rgba(255,255,255,0.02);
   overflow:hidden;
   position:relative;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.04),
+    0 10px 30px rgba(0,0,0,0.35);
 }
+
+/* soft “glass” sheen */
+.visual::after{
+  content:"";
+  position:absolute;
+  inset:-40% -20% auto -40%;
+  height:140%;
+  transform:rotate(18deg);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,0.06) 35%,
+    rgba(255,255,255,0.02) 55%,
+    transparent 80%
+  );
+  pointer-events:none;
+  opacity:0.8;
+}
+
 .visual img{
   width:100%;
   height:100%;
   object-fit:cover;
   display:block;
+  filter: saturate(1.15) contrast(1.05);
+  opacity:0.98;
 }
 
-/* keep badge only once (top-left) */
+/* make the Prime badge crisper */
 .tag{
   position:absolute;
   top:10px;
@@ -304,9 +331,10 @@ a:hover{opacity:0.92}
   font-size:12px;
   padding:6px 10px;
   border-radius:999px;
-  border:1px solid rgba(124,92,255,0.45);
-  background: rgba(124,92,255,0.14);
-  color:rgba(230,237,247,0.92);
+  border:1px solid rgba(124,92,255,0.55);
+  background: rgba(124,92,255,0.18);
+  color:rgba(230,237,247,0.94);
+  backdrop-filter: blur(8px);
 }
 
 .info h3{
@@ -404,4 +432,5 @@ a:hover{opacity:0.92}
   .card{grid-template-columns: 160px 1fr; grid-template-rows:auto auto;}
   .ctaCol{grid-column:1/-1;align-items:flex-start}
   .ctaCol .btn{width:100%}
+
 }
