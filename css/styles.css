@@ -434,3 +434,52 @@ a:hover{opacity:0.92}
   .ctaCol .btn{width:100%}
 
 }
+/* Step 7 — Unique visuals per card (no extra images) */
+.catalog .card:nth-child(1) .visual{
+  background:
+    radial-gradient(120px 90px at 25% 30%, rgba(124,92,255,0.28), transparent 60%),
+    radial-gradient(120px 90px at 75% 70%, rgba(255,122,217,0.16), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(2) .visual{
+  background:
+    radial-gradient(120px 90px at 20% 35%, rgba(39,215,166,0.22), transparent 60%),
+    radial-gradient(120px 90px at 80% 65%, rgba(124,92,255,0.16), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(3) .visual{
+  background:
+    radial-gradient(120px 90px at 30% 25%, rgba(246,211,107,0.18), transparent 60%),
+    radial-gradient(120px 90px at 78% 72%, rgba(124,92,255,0.16), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(4) .visual{
+  background:
+    radial-gradient(120px 90px at 22% 28%, rgba(255,140,92,0.16), transparent 60%),
+    radial-gradient(120px 90px at 78% 72%, rgba(39,215,166,0.14), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(5) .visual{
+  background:
+    radial-gradient(120px 90px at 26% 34%, rgba(124,92,255,0.18), transparent 60%),
+    radial-gradient(120px 90px at 76% 66%, rgba(92,180,255,0.14), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(6) .visual{
+  background:
+    radial-gradient(120px 90px at 24% 30%, rgba(255,122,217,0.18), transparent 60%),
+    radial-gradient(120px 90px at 78% 72%, rgba(246,211,107,0.12), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(7) .visual{
+  background:
+    radial-gradient(120px 90px at 22% 30%, rgba(39,215,166,0.18), transparent 60%),
+    radial-gradient(120px 90px at 78% 70%, rgba(255,140,92,0.12), transparent 62%),
+    rgba(255,255,255,0.02);
+}
+.catalog .card:nth-child(8) .visual{
+  background:
+    radial-gradient(120px 90px at 26% 28%, rgba(92,180,255,0.18), transparent 60%),
+    radial-gradient(120px 90px at 76% 72%, rgba(124,92,255,0.14), transparent 62%),
+    rgba(255,255,255,0.02);
+}
