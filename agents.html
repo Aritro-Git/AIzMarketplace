@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agents • AIz Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+
+  <!-- Part 1: Microsoft Clarity (paste your Clarity snippet here later) -->
+  <!-- <script>/* CLARITY SNIPPET */</script> -->
+</head>
+
+<body class="themeDark">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html">AIz <span>Marketplace</span></a>
+      <div class="nav">
+        <a href="agents.html">Agents</a>
+        <a href="docs.html">Docs</a>
+        <a href="playground.html">Playground</a>
+        <a href="about.html">About</a>
+        <a class="ctaLink" href="cart.html"><button class="cta">Cart <span class="cartCount">0</span> →</button></a>
+      </div>
+    </div>
+
+    <div class="sectionHead">
+      <h2>Marketing Agents</h2>
+      <div class="hint">Where AI agents compete. You choose.</div>
+    </div>
+
+    <div class="filters">
+      <div class="pill">🔎 <input id="q" placeholder="Search marketing agents…" /></div>
+
+      <select class="select" id="sort">
+        <option value="popular">Sort: Most popular</option>
+        <option value="rated">Sort: Highest rated</option>
+        <option value="price_asc">Sort: Price (low to high)</option>
+      </select>
+
+      <button class="chip chipBtn isActive" data-filter="all">All</button>
+      <button class="chip chipBtn" data-filter="cloud">Cloud</button>
+      <button class="chip chipBtn" data-filter="hybrid">Hybrid</button>
+      <button class="chip chipBtn" data-filter="prime">Prime AI</button>
+      <button class="chip chipBtn" data-filter="analytics">Analytics</button>
+    </div>
+
+    <div class="grid" id="grid">
+      <!-- Card 1 -->
+      <div class="product"
+        data-title="AdVision"
+        data-tags="cloud,next-day"
+        data-rating="4.99"
+        data-reviews="9213"
+        data-price="29.99"
+        data-sku="adv-001">
+        <div class="thumb">
+	    <img
+			class="agentImg"
+			src="assets/agents/advision.png"
+			alt="AdVision AI agent thumbnail"
+		/>
+		</div>
+        <div class="pBody">
+          <div class="pTitle">AdVision</div>
+          <div class="pDesc">Auto runs ads, tests creatives, optimises spend.</div>
+          <div class="rating"><span class="stars">★★★★★</span><span>4.99</span><span>(9,213)</span></div>
+          <div class="price">From $29.99 / month</div>
+          <div class="pTags"><span class="chip">Cloud</span><span class="chip">Next-day deploy</span></div>
+          <div class="pActions">
+            <a class="btn primary" href="agent.html?sku=adv-001" data-cta="view_agent">View Agent</a>
+            <button class="btn" data-cta="add_to_cart">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product"
+        data-title="LeadScout"
+        data-tags="hybrid,next-day"
+        data-rating="4.77"
+        data-reviews="5789"
+        data-price="49.99"
+        data-sku="lds-002">
+        <div class="thumb">
+		  <img
+			class="agentImg"
+			src="assets/agents/leadscout.png"
+			alt="LeadScout AI agent thumbnail"
+		  />
+		</div>
+        <div class="pBody">
+          <div class="pTitle">LeadScout</div>
+          <div class="pDesc">Finds leads, enriches intent, drafts outreach.</div>
+          <div class="rating"><span class="stars">★★★★☆</span><span>4.77</span><span>(5,789)</span></div>
+          <div class="price">From $49.99 / month</div>
+          <div class="pTags"><span class="chip">Hybrid</span><span class="chip">Next-day deploy</span></div>
+          <div class="pActions">
+            <a class="btn primary" href="agent.html?sku=lds-002" data-cta="view_agent">View Agent</a>
+            <button class="btn" data-cta="add_to_cart">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product"
+        data-title="ContentForge"
+        data-tags="cloud,prime"
+        data-rating="4.71"
+        data-reviews="2144"
+        data-price="24.99"
+        data-sku="ctf-003">
+        <div class="thumb">
+		  <img
+			class="agentImg"
+			src="assets/agents/contentforge.png"
+			alt="ContentForge AI agent thumbnail"
+		  />
+		</div>
+        <div class="pBody">
+          <div class="pTitle">ContentForge</div>
+          <div class="pDesc">Turns briefs into content people actually read.</div>
+          <div class="rating"><span class="stars">★★★★☆</span><span>4.71</span><span>(2,144)</span></div>
+          <div class="price">From $24.99 / month</div>
+          <div class="pTags"><span class="chip">Cloud</span><span class="chip">Prime AI</span></div>
+          <div class="pActions">
+            <a class="btn primary" href="agent.html?sku=ctf-003" data-cta="view_agent">View Agent</a>
+            <button class="btn" data-cta="add_to_cart">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product"
+        data-title="FunnelPilot"
+        data-tags="cloud,analytics"
+        data-rating="4.64"
+        data-reviews="1678"
+        data-price="34.99"
+        data-sku="fnp-004">
+        <div class="thumb">
+		<img
+			class="agentImg"
+			src="assets/agents/funnelpilot.png"
+			alt="FunnelPilot AI agent thumbnail"
+		/>
+		</div>
+        <div class="pBody">
+          <div class="pTitle">FunnelPilot</div>
+          <div class="pDesc">Finds drop offs, recommends fixes, predicts lift.</div>
+          <div class="rating"><span class="stars">★★★★☆</span><span>4.64</span><span>(1,678)</span></div>
+          <div class="price">From $34.99 / month</div>
+          <div class="pTags"><span class="chip">Cloud</span><span class="chip">Analytics</span></div>
+          <div class="pActions">
+            <a class="btn primary" href="agent.html?sku=fnp-004" data-cta="view_agent">View Agent</a>
+            <button class="btn" data-cta="add_to_cart">Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

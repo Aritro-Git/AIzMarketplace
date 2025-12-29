@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIz Marketplace — Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="themeDark">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">AIz <span>Marketplace</span></div>
+      <div class="nav">
+        <a href="agents.html">Agents</a>
+        <a href="#">Docs</a>
+        <a href="#">Playground</a>
+        <a href="#">About</a>
+        <button class="cta" onclick="location.href='cart.html'">Cart <span class="cartCount">0</span></button>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detailMedia">
+        <div class="detailShot">
+		<img
+      src="assets/agents/advision.png"
+      alt="AdVision preview"
+      class="agentPreviewImg"
+		/>
+		</div>
+        <!-- removed 3 mini preview boxes -->
+      </div>
+
+      <div class="detailInfo" id="detailInfo">
+        <div class="crumbs">
+          <span>Agents</span> <span>›</span> <span id="crumbAgent">AdVision</span>
+        </div>
+
+        <div class="detailTitle" id="agentName">AdVision</div>
+        <p class="detailSub" id="agentDesc">Auto runs ads, tests creatives, optimises spend.</p>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span id="agentRating">4.99</span>
+          <span id="agentReviews">(9,213)</span>
+        </div>
+
+        <div class="detailPrice" id="agentPrice">From $29.99 / month</div>
+
+        <div class="pTags" id="agentTags">
+          <span class="chip">Cloud</span>
+          <span class="chip">Next-day deploy</span>
+        </div>
+
+        <div class="detailActions">
+          <button class="btn primary" id="addToCartBtn">Add to Cart</button>
+          <button class="btn" onclick="history.back()">Back</button>
+        </div>
+
+        <div class="detailPanel">
+          <h3>What it does</h3>
+          <ul id="agentBullets">
+            <li>Automates a core workflow end to end</li>
+            <li>Works with prompts or API input</li>
+            <li>Deploys in minutes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

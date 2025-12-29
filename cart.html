@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart • AIz Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body class="themeDark">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html">AIz <span>Marketplace</span></a>
+      <div class="nav">
+        <a href="agents.html">Agents</a>
+        <a href="docs.html">Docs</a>
+        <a href="playground.html">Playground</a>
+        <a href="about.html">About</a>
+        <button class="cta">Cart <span class="cartCount">0</span> →</button>
+      </div>
+    </div>
+
+    <div class="cartGrid">
+      <div class="cartBox">
+        <h2 class="cartTitle">Your cart</h2>
+        <div id="cartItems" class="cartItems"></div>
+        <div class="cartEmpty" id="cartEmpty">Your cart is empty.</div>
+      </div>
+
+      <div class="summaryBox">
+        <h3>Order summary</h3>
+        <div class="sumRow"><span>Subtotal</span><span id="sumSubtotal">$0.00</span></div>
+        <div class="sumRow"><span>Estimated tax</span><span id="sumTax">$0.00</span></div>
+        <div class="sumRow total"><span>Total</span><span id="sumTotal">$0.00</span></div>
+        <button class="btn primary" data-cta="begin_checkout">Checkout</button>
+        <a class="btn" href="agents.html">Continue shopping</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
